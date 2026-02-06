@@ -30,7 +30,6 @@ Perguntar o preço de um produto
 
 Informar se a compra é possível ou não
 '''
-
 # valor1 = float(input('quantos reais voce quer filho ')) 
 valor1 = 10
 bala = float(5) 
@@ -38,25 +37,22 @@ bala = float(5)
 print('voce tem {} reais' .format(valor1)) 
 
 resposta = input("ola sou o vendedor, quer comprar uma bala por 5 reais S/N")
-'''
-Regras
 
-Use while
-
-O programa deve:
-
-pedir a resposta
-
-validar a resposta
-
-só sair quando:
-
-a compra acontecer ou
-
-o cliente disser N'''
 while resposta !=  "N" or resposta !=  "S" :
-    print("escreva  S ou  N  por gentileza")
-    
+    resposta = str(input("escreva S ou N por gentileza "))
+
+    if (resposta == 'N'): 
+        print('certo tenha um otimo dia garoto') 
+
+    elif (resposta == 'S') : 
+        if valor1 < bala:
+            print('voce nao tem dinheiro para comprar bala') 
+        if  valor1 > bala:
+            valor1 = valor1 - bala 
+            print('toma esta bala garoto')
+
+    print('Voce  tem {}  reais' .format(valor1))
+
 if (resposta == 'N'): 
     print('certo tenha um otimo dia garoto') 
 
