@@ -36,22 +36,10 @@ bala = float(5)
 
 print('voce tem {} reais' .format(valor1)) 
 
-resposta = input("ola sou o vendedor, quer comprar uma bala por 5 reais S/N")
+resposta = input("ola sou o vendedor, quer comprar uma bala por 5 reais S/N").upper()
 
-while resposta !=  "N" or resposta !=  "S" :
-    resposta = str(input("escreva S ou N por gentileza "))
-
-    if (resposta == 'N'): 
-        print('certo tenha um otimo dia garoto') 
-
-    elif (resposta == 'S') : 
-        if valor1 < bala:
-            print('voce nao tem dinheiro para comprar bala') 
-        if  valor1 > bala:
-            valor1 = valor1 - bala 
-            print('toma esta bala garoto')
-
-    print('Voce  tem {}  reais' .format(valor1))
+while resposta !=  "N" and resposta !=  "S" :
+    resposta = input("escreva S ou N por gentileza ").upper()
 
 if (resposta == 'N'): 
     print('certo tenha um otimo dia garoto') 
@@ -64,5 +52,4 @@ elif (resposta == 'S') :
         print('toma esta bala garoto')
 
 print('Voce  tem {}  reais' .format(valor1))
-
 
