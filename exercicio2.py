@@ -1,4 +1,4 @@
-# utilizar o random em um jogo de cara e coroa, saber se ganhou ou.
+# utilizar o random em um jogo de cara e coroa, saber se ganhou ou perdeu.
 
 import random
 
@@ -27,9 +27,9 @@ if quer == "S":
 
     if (caco_escolha == "1" and resultado == "cara") or \
        (caco_escolha == "2" and resultado == "coroa"):
-        print("Você ganhou 🎉")
+        print("Você ganhou!")
     else:
-        print("Você perdeu 😢")
+        print("Você perdeu!")
 
 elif quer == "N":
     print("Que pena ;-;")
